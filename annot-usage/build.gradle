@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0.0_RELEASE'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly project(':annot')
+    implementation project(':annot')
+    annotationProcessor project(':annot')
+}

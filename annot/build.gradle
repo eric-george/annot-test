@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group 'com.example'
+version '1.0.0_RELEASE'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+    implementation 'net.bytebuddy:byte-buddy:1.12.23'
+}
